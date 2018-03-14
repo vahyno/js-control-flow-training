@@ -7,13 +7,13 @@ let securityQuestions = [{
   question: "What is your favorite city?",
   expectedAnswer: "Berkeley"
 },{
-  question: "Your favorite teachers?",
-  expectedAnswer: "Esther & Faisal"
+  question: "Your favorite food?",
+  expectedAnswer: "pizza"
 }];
 
 
 
-for (let i=0; securityQuestions.length;i++){
+for (let i=0; i<securityQuestions.length;i++){
   let securityQ = window.prompt(securityQuestions[i].question);
   if (securityQ !== securityQuestions[i].expectedAnswer){
     alert('Answer does not match what we have on file.')

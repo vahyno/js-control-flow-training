@@ -3,8 +3,8 @@ console.log("login.js loaded");
 
 
 let userLogin = {
-  name:'octocat_rules',
-  password:'123',
+  name:'baba_booey',
+  password:'h100',
 }
 
 let usernameQ = window.prompt(`Enter password for user ${userLogin['name']}`);
