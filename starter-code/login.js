@@ -8,7 +8,10 @@ let userLogin = {
 }
 
 let usernameQ = window.prompt(`Enter password for user ${userLogin['name']}`);
-while (usernameQ !== userLogin['password']){
+let attempt = 3;
+
+while (usernameQ !== userLogin['password'] && attempt > 1){
   alert('Answer does not match what we have on file. Try again');
   usernameQ = window.prompt(`Enter password for user ${userLogin['name']}`);
+  attempt -=1;
 }
